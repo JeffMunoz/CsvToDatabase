@@ -18,14 +18,23 @@ public class AuthorParser {
   }
 
   protected String getName() {
+    if(author_name.equals("")){
+      author_name = null;
+    }
     return author_name;
   }
 
   protected String getEmail() {
+    if(author_email.equals("")){
+      author_email = null;
+    }
     return author_email;
   }
 
   protected String getUrl() {
+    if(author_url.equals("")){
+      author_url = null;
+    }
     return author_url;
   }
 }
